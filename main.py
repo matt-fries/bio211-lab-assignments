@@ -42,11 +42,8 @@ ax.legend(fontsize=10, loc='best', framealpha=0.9)
 ax.grid(True, alpha=0.3, linestyle=':', linewidth=0.5)
 ax.set_xlim(-0.5, 14.5)
 
-# Add figure caption at the bottom
-fig.text(0.5, 0.01, 'Figure 1: DCPIP reduction over time across different treatment conditions',
-         fontsize=11, ha='center', style='italic', wrap=True)
 
 plt.style.use('dark_background')
-plt.tight_layout(rect=[0, 0.03, 1, 1])
+plt.tight_layout()
 plt.savefig('lab4_plot.png', dpi=300, bbox_inches='tight')
 plt.show()
